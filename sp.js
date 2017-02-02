@@ -19,6 +19,12 @@ angular.module('SinglePageApp',['ngRoute'])
 			controller : 'moviesController'
 			// in line binding
 		})
+		.when('/movielist/:id', {
+			templateUrl: 'movie.html',
+			controller : 'movieController'
+			// in line binding
+		})
+
 		.otherwise({
 			redirectTo: '/home'
 		})
@@ -51,4 +57,15 @@ angular.module('SinglePageApp',['ngRoute'])
 		console.log(error);
 	});
 })
-// promise : rejected/pending/resolved
+
+.controller('movieController',function($scope,movieFactory,$routeParams){
+	movieFactory
+	.get()
+	.then(function(response){
+		console.log(response);
+		$scope.movie=response.data[$routeParams.id];
+	})
+	.catch(function(error){
+		console.log(error);
+	});
+})
