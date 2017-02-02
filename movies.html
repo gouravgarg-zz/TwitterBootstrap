@@ -1,4 +1,28 @@
-<br><br><br><br>
-<div ng-repeat="movie in movies">
-          	{{movie.name | lowercase }} 
-</div>
+     <br><br>
+          <input type="text" ng-model="searchTxt" class="form-control" placeholder="Filter Movie">
+     <br><br>
+
+     <!-- filter by text box values and filter on name only -->
+     <!-- order by name  -->
+     <div ng-repeat="movie in movies | filter : {'name' : searchTxt} | orderBy:'name'">
+               <div class="col-md-4 col-sm-6 col-xs-12"> 
+                                   <!-- col-md-4 medium device make 12/4 = 3 columns -->
+                                    <!-- col-sm-6 small device make 12/6 = 2 columns -->
+                                     <!-- col-xs-12-  for extra small devices 12/12  = 1 column    -->
+                    <h2> {{movie.name | lowercase }}</h2> 
+                    <p>
+                              <img ng-src="{{movie.thumb}}" class="thumb-big">     
+                    </p>
+                              
+                    <p>
+                         <!-- limit to review char 99 only -->
+                                   {{movie.review | limitTo:99}}
+                                   <label ng-if="movie.review.length > 99">...</label>
+                    </p>
+
+                    <p>
+                                   <a href="/#!/movie/{{movie.id}}" class="btn btn-success">Review</a>
+                    </p>
+
+               </div>
+     </div>
