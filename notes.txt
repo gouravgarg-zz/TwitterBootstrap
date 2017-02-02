@@ -29,3 +29,5 @@ npm website
 
 We need to host to go for routing, to hosting we can use any web server
 but for temprory we can use node.js which have live server just only for hosting.
+
+promise : rejected/pending/resolved
