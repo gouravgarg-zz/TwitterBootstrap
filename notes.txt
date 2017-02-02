@@ -1,0 +1,25 @@
+viewport   : rendered screen resolution
+adaptive design : e.g m.facebook.com
+hamberger menu
+responsive design : viewport and css Media  Queries 
+grid systems : multiple rows  + 12 Columns 
+cheaper  very much
+
+user experienced  experts
+ui designers experts
+
+
+
+Arvinder Demo
+https://gist.github.com/arvindr21/7fa29d302b3232c3dbb6926d045ba43d
+
+Single page : One page to  full application 
+
+
+In single page app Will  have multiple Routes 
+router are differet  modules  so download from angular.js in browse additional modules
+
+live-server in node js like  jetty (for hosting folders)
+
+! called hashbang
+# in url is client side routing , don't go to server

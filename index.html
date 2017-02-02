@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twitter Bootstrap App</title>
+	<!-- Latest compiled and minified CSS from http://getbootstrap.com/getting-started/#template -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+</head>
+<style>
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+</style>
+<script src="angular.js"></script>
+<script src="https://code.angularjs.org/1.6.1/angular-route.js"></script>
+<script src="sp.js"></script>
+<body ng-app="SinglePageApp">
+<!-- <h1 class="text-center text-success"> Success</h1> -->
+<!-- <h1 class="text-center text-error"> Success</h1> -->
+<!-- <h1 class="text-center text-warning"> Success</h1> -->
+<!-- <h1 class="text-center text-danger"> Success</h1> -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="/#!/about">About</a></li>
+            <li><a href="/#!/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+ <div ng-view></div>
+ <script type="text/ng-template" id="about.html">
+	 <div class="starter-template">
+        <h1>Bootstrap About Page</h1>
+       </div>	
+ </script>
+
+ <script type="text/ng-template" id="contact.html">
+ 	Contact Page
+ </script>
+
+</body>
+</html>
