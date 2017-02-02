@@ -18,3 +18,10 @@ angular.module('SinglePageApp',['ngRoute'])
 			redirectTo: '/home'
 		})
 })
+
+.run(function($rootScope, $location){
+	$rootScope.isActive = function (viewLocation) { 
+        return viewLocation === $location.path();
+    };
+
+})

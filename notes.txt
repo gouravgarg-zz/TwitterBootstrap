@@ -20,9 +20,12 @@ In single page app Will  have multiple Routes
 router are differet  modules  so download from angular.js in browse additional modules
 
 live-server in node js like  jetty (for hosting folders)
+https://github.com/arvindr21/live-server-pack
 
 ! called hashbang
 # in url is client side routing , don't go to server
+
+npm website
 
 We need to host to go for routing, to hosting we can use any web server
 but for temprory we can use node.js which have live server just only for hosting.
