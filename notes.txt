@@ -23,3 +23,6 @@ live-server in node js like  jetty (for hosting folders)
 
 ! called hashbang
 # in url is client side routing , don't go to server
+
+We need to host to go for routing, to hosting we can use any web server
+but for temprory we can use node.js which have live server just only for hosting.
